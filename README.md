@@ -81,6 +81,122 @@ choco install rust
 
 macOS
 
+# 1. Installer Xcode Command Line Tools
+xcode-select --install
+
+# 2. Installer Rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+# 3. Installer Node.js (avec Homebrew)
+brew install node
+
+
+Linux (Ubuntu/Debian)
+
+# 1. Installer Node.js
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+# 2. Installer Rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+# 3. Installer les dépendances système
+sudo apt-get update
+sudo apt-get install -y \
+  libgtk-3-dev \
+  libwebkit2gtk-4.1-dev \
+  libappindicator3-dev \
+  librsvg2-dev \
+  patchelf
+
+
+Étape 2 : Cloner le Repository
+
+git clone https://github.com/BarackNdenga/Aether-IDE.git
+cd Aether-IDE
+
+
+Étape 3 : Installer les Dépendances
+
+# Installer les dépendances npm
+npm install
+
+
+Étape 4 : Lancer en Mode Développement
+
+npm run tauri dev
+
+
+Cela va :
+
+✅ Compiler le code Rust
+✅ Lancer le serveur React en développement
+✅ Ouvrir l'application Tauri
+
+
+Étape 5 : Construire pour la Production
+
+Une fois que tout fonctionne, construisez l'application compilée :
+
+npm run tauri build
+
+
+Les binaires compilés seront dans : src-tauri/target/release/bundle/
+
+Sur chaque plateforme :
+
+Windows : Aether-IDE.msi, Aether-IDE.exe
+macOS : Aether-IDE.dmg, Aether-IDE.app
+Linux : aether-ide.deb, Aether-IDE.AppImage
+
+
+🚀 Commandes Utiles
+
+# Mode développement avec hot reload
+npm run tauri dev
+
+# Build pour votre plateforme actuelle
+npm run tauri build
+
+# Informations sur Tauri
+npm run tauri info
+
+# Vérifier la qualité du code (si configuré)
+npm run lint
+
+# Nettoyer les fichiers compilés
+npm run tauri build -- --help
+
+
+❓ Dépannage
+
+Erreur : "command not found: cargo"
+
+source $HOME/.cargo/env
+
+Erreur sur Linux : "libgtk-3-dev not found"
+
+sudo apt-get install -y libgtk-3-dev libwebkit2gtk-4.1-dev libappindicator3-dev librsvg2-dev patchelf
+
+Erreur : "npm not found"
+
+Réinstallez Node.js depuis https://nodejs.org/
+
+✅ Vérifier l'Installation
+
+# Vérifier Node.js
+node --version
+
+# Vérifier npm
+npm --version
+
+# Vérifier Rust
+rustc --version
+cargo --version
+
+# Vérifier Tauri
+npm run tauri info
+
 
 📦 Stack Technique
 

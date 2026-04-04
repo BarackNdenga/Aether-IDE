@@ -27,3 +27,10 @@ Un éditeur de code **léger**, **performant** et **cross-platform** construit a
 ### Dépendances Linux
 ```bash
 sudo apt-get install libgtk-3-dev libwebkit2gtk-4.1-dev libappindicator3-dev librsvg2-dev patchelf
+
+macOS
+
+Xcode Command Line Tools
+Windows
+
+Visual Studio 2022 (ou Build Tools)

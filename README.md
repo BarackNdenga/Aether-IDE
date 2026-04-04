@@ -78,6 +78,10 @@ choco install rust
 # 3. Installer Visual Studio Build Tools
 # Télécharger depuis : https://visualstudio.microsoft.com/downloads/
 
+
+macOS
+
+
 📦 Stack Technique
 
 Composant	Technologie

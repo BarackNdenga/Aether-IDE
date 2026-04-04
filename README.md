@@ -57,6 +57,16 @@ npm run tauri build	Compile l'application pour votre plateforme
 npm run tauri info	Affiche les informations de configuration Tauri
 npm run lint	Vérifie la qualité du code
 
+# 1. Installer Node.js (v18+)
+# Télécharger depuis : https://nodejs.org/
+
+# 2. Installer Rust
+# Télécharger depuis : https://rustup.rs/
+# Ou via Chocolatey :
+choco install rust
+
+# 3. Installer Visual Studio Build Tools
+# Télécharger depuis : https://visualstudio.microsoft.com/downloads/
 
 📦 Stack Technique
 

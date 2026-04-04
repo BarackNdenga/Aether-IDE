@@ -57,6 +57,16 @@ npm run tauri build	Compile l'application pour votre plateforme
 npm run tauri info	Affiche les informations de configuration Tauri
 npm run lint	Vérifie la qualité du code
 
+
+🔧 Installation Complète
+
+Étape 1 : Prérequis
+
+Avant de commencer, installez ces outils :
+
+Windows
+
+
 # 1. Installer Node.js (v18+)
 # Télécharger depuis : https://nodejs.org/
 

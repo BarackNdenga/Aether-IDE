@@ -95,15 +95,6 @@ Secrets :
 Le workflow importe le certificat dans le store du runner Windows et injecte automatiquement le `thumbprint`
 dans `src-tauri/tauri.windows.conf.json` pour que Tauri signe les bundles.
 
-
-🤝 Contribution
-Les contributions sont les bienvenues ! Voir CONTRIBUTING.md pour les détails.
-
-
-🙏 Remerciements
-Développé avec ❤️ par Barack Ndenga
-
-
 ## Roadmap “révolutionnaire”
 
 - Brancher un **vrai modèle IA** (local Ollama ou API cloud) + contexte workspace.
@@ -111,4 +102,9 @@ Développé avec ❤️ par Barack Ndenga
 - Filesystem + gestion workspace, terminal réel, Git intégré.
 - RAG (embeddings + graphe) et “diff” assisté par IA.
 
+🤝 Contribution
 
+Les contributions sont les bienvenues ! Voir CONTRIBUTING.md pour les détails.
+
+🙏 Remerciements
+Développé avec ❤️ par Barack Ndenga
